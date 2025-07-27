@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.Register;
+import com.example.demo.entity.userDetails;
 
 public interface registerService {
-	Register userRegister(Register register);
+	userDetails userRegister(userDetails register);
 }

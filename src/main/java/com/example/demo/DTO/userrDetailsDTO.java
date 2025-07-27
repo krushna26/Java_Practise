@@ -1,6 +1,6 @@
 package com.example.demo.DTO;
 
-public class RegisterDTO {
+public class userrDetailsDTO {
 	private Long id;
 	private String name;
 	private String username;
