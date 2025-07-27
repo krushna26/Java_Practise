@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.Register;
+
+import com.example.demo.entity.userDetails;
 import com.example.demo.service.registerService;
 
 @RestController
@@ -19,9 +20,9 @@ public class registerController {
 	
 	
 	@PostMapping
-	public ResponseEntity<Register> userRegistration(@RequestBody Register register){
+	public ResponseEntity<userDetails> userRegistration(@RequestBody userDetails register){
 		System.out.println("Printing the user details : "+register);
-		Register res=registration.userRegister(register);
+		userDetails res=registration.userRegister(register);
 		
 		return ResponseEntity.status(201).body(res);
 		

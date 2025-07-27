@@ -13,7 +13,7 @@ import lombok.Setter;
 
 @Entity
 @Table(name="RegisterTable")
-public class Register {
+public class userDetails {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
